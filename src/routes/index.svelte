@@ -1,3 +1,3 @@
-<h1 class="text-3xl font-bold">Welcome to SvelteKit</h1>
+<h1 class="text-3xl font-bold">My Personal Site</h1>
 <br />
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<p><a class="underline text-blue-500" href="/blog/test">Blog Post</a> rendered from markdown</p>

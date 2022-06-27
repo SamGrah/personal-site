@@ -1,5 +1,11 @@
 <script>
-  import "../app.css"
+	import '../app.css';
+	import Nav from '../components/nav.svelte';
 </script>
 
-<slot />
+<div class="h-full flex flex-col">
+	<Nav />
+	<div class="mt-24 mx-8">
+		<slot />
+	</div>
+</div>

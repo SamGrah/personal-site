@@ -1,10 +1,10 @@
 <script>
-	import '../../scripts/prism'
-	import '../../css/prism.css'
+	import '../../scripts/prism';
+	import '../../css/prism.css';
 </script>
 
 <div class="flex justify-center">
-  <div class="h-screen prose prose-grey prose-lg max-w-4xl">
-    <slot />
-  </div>
+	<div class="h-screen w-3/4 prose-lg">
+		<slot />
+	</div>
 </div>

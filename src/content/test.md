@@ -1,3 +1,11 @@
+---
+title: test blog
+author: Sam Graham
+date: 2022-06-27
+layout: blog
+excerpt: this is excerpt text
+---
+
 ## Rendered from Markdown File
 
 This is some text describing the code

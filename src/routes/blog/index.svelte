@@ -1,17 +1,18 @@
 <script>
-  import {allPosts} from '../../stores.js'
-  const allPostsContent = Object.values($allPosts)
+	import { allPosts } from '../../stores.js';
+	const allPostsContent = Object.values($allPosts);
 </script>
 
 <div class="flex justify-center">
-	<div class="w-3/4 flex flex-col">
+	<div class="flex flex-col max-w-2xl">
 		{#each allPostsContent as post}
-			<div class="px-4 pb-1 rounded-xl hover:bg-slate-100 transition ease-in-out duration-300">
+			<div class="px-4 pb-1 mb-3 rounded-xl hover:bg-slate-100 transition ease-in-out duration-300">
 				<a rel="bookmark" href="/blog/{post.fileName}" sveltekit:prefetch>
-					<h3 class="mt-3">{post.title}</h3>
+					<h3 class="mt-3 font-sans text-3xl font-bold">{post.title}</h3>
 				</a>
-				{post.excerpt}<br />
-        fileName: {post.fileName}<br />
+				<div class="mt-2 text-gray-600 text-xl">
+					{post.excerpt}<br />
+				</div>
 			</div>
 		{/each}
 	</div>

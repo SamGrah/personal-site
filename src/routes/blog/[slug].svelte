@@ -11,7 +11,7 @@
 </script>
 
 <div class="flex justify-center">
-	<div class="h-screen min-w-0 prose lg:prose-xl md:prose-lg sm:prose-md">
+	<div class="h-screen min-w-0 prose lg:prose-xl md:prose-lg sm:prose-base prose-p:leading-normal">
 		<svelte:component this={fileHtmlRenderMethod} />
 	</div>
 </div>

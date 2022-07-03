@@ -27,3 +27,4 @@ function getAllPosts() {
 }
 
 export const allPosts = readable(getAllPosts());
+export const pageTitle = readable('@devStuff')

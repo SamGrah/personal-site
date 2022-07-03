@@ -1,6 +1,7 @@
 <script>
 	import '../../scripts/prism';
 	import '../../css/prism.css';
+	import { Utterances } from '@codewithshin/svelte-utterances';
 
 	import { page } from '$app/stores';
 	import { allPosts } from '../../stores';
@@ -18,6 +19,10 @@
 	} = blogToDisplay;
 </script>
 
+<svelte:head>
+	<title>{title}</title>
+</svelte:head>
+
 <p class="mb-0 font-medium text-5xl">{title}</p>
 <p class="mt-2 text-sm text-gray-500">
 	By {author} &#8226
@@ -33,6 +38,8 @@
 		</a>
 	{/each}
 </div>
-<div class="h-screen mx-auto prose lg:prose-md md:prose-md sm:prose-base prose-p:leading-[27.2px]">
+<div class="mx-auto prose lg:prose-md md:prose-md sm:prose-base prose-p:leading-[27.2px]">
 	<svelte:component this={contentHtmlRenderMethod} />
 </div>
+<p class="mt-20 font-medium text-2xl">Comments</p>
+<Utterances reponame="samgrah/blog-comments" />

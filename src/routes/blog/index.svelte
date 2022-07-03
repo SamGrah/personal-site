@@ -1,7 +1,11 @@
 <script>
-	import { allPosts } from '../../stores.js';
+	import { pageTitle, allPosts } from '../../stores.js';
 	const allPostsContent = Object.values($allPosts);
 </script>
+
+<svelte:head>
+	<title>{$pageTitle}</title>
+</svelte:head>
 
 <div class="flex justify-center">
 	<div class="flex flex-col max-w-2xl">

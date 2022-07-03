@@ -8,7 +8,8 @@
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+     "vercel-install": "./vercel-submodule-workaround.sh && yarn --ignore-scripts --production=false"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",

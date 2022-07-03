@@ -2,7 +2,7 @@ import { readable } from "svelte/store";
 import { getMonthName } from './scripts/utils';
 
 function getAllPosts() {
-  const allPostFiles = import.meta.globEager('./content/*.md');
+  const allPostFiles = import.meta.globEager('../content/*.md');
 
   const allPosts = {};
   Object.entries(allPostFiles).forEach(([path, post]) => {

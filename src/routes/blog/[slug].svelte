@@ -42,4 +42,4 @@
 	<svelte:component this={contentHtmlRenderMethod} />
 </div>
 <p class="mt-20 font-medium text-2xl">Comments</p>
-<Utterances reponame="samgrah/blog-comments" />
+<Utterances reponame="samgrah/blog-comments" issueTerm="title" />

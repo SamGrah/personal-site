@@ -1,23 +1,30 @@
 <script>
-	import { pageTitle, allPosts } from '../../stores.js';
-	const allPostsContent = Object.values($allPosts);
+	import { appTitle } from '../../stores';
+	import { page } from '$app/stores';
+	import PostsByYear from '../../components/PostsByYear.svelte';
+
+	const tagUrlParam = $page.url.searchParams.get('tag');
+	const categoryUrlParam = $page.url.searchParams.get('category');
+
+  const postsFilter = {}
+  if (tagUrlParam) {
+    postsFilter.prop = 'tags';
+    postsFilter.value= tagUrlParam;
+    postsFilter.msg = `Posts Tagged: '${tagUrlParam}'`;
+  } else if (categoryUrlParam){
+    postsFilter.prop = 'category';
+    postsFilter.value= categoryUrlParam;
+    postsFilter.msg = `Posts Category: '${categoryUrlParam}'`;
+  }
 </script>
 
 <svelte:head>
-	<title>{$pageTitle}</title>
+	<title>{$appTitle}</title>
 </svelte:head>
 
-<div class="flex justify-center">
-	<div class="flex flex-col max-w-2xl">
-		{#each allPostsContent as post}
-			<div class="px-4 pb-1 mb-3 rounded-xl hover:bg-slate-100 transition ease-in-out duration-300">
-				<a rel="bookmark" href="/blog/{post.fileName}" sveltekit:prefetch>
-					<h3 class="mt-3 font-sans text-3xl font-bold">{post.title}</h3>
-				</a>
-				<div class="mt-2 text-gray-600 text-xl">
-					{post.excerpt}<br />
-				</div>
-			</div>
-		{/each}
-	</div>
-</div>
+{#if postsFilter.prop}
+	<p class="mb-10 text-gray-500 text-3xl font-medium">
+    {postsFilter.msg}
+  </p>
+{/if}
+<PostsByYear filter={postsFilter}/>

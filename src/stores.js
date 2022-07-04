@@ -3,8 +3,8 @@ import { getMonthName } from './scripts/utils';
 
 function getAllPosts() {
   const allPostFiles = import.meta.globEager('./content/*.md');
-
   const allPosts = {};
+
   Object.entries(allPostFiles).forEach(([path, post]) => {
     const fileName = path
       .replace("./content/", "")
@@ -27,4 +27,4 @@ function getAllPosts() {
 }
 
 export const allPosts = readable(getAllPosts());
-export const pageTitle = readable('@devStuff')
+export const appTitle = readable('@devStuff')

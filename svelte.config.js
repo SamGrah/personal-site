@@ -2,7 +2,6 @@ import preprocess from "svelte-preprocess"
 import adapter from '@sveltejs/adapter-auto';
 import { mdsvex } from 'mdsvex'
 import mdsvexConfig from './mdsvex.config.js'
-import copy from 'rollup-plugin-copy'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

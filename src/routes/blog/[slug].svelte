@@ -23,7 +23,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<div class="pl-2">
+<div class="pl-1 z-1">
 	<p class="mb-0 text-5xl text-gray-700 font-medium">{title}</p>
 	<p class="mt-2 text-sm text-gray-500">
 		By {author} &#8226
@@ -39,9 +39,12 @@
 			</a>
 		{/each}
 	</div>
-	<div class="mx-auto prose lg:prose-md md:prose-md sm:prose-base prose-p:leading-[27.2px]">
+	<div
+		class="mx-auto max-w-prose prose lg:prose-md md:prose-md sm:prose-base prose-p:leading-[27.2px]"
+	>
 		<svelte:component this={contentHtmlRenderMethod} />
 	</div>
-	<p class="mt-20 text-2xl text-gray-700 font-medium">Comments</p>
-	<Utterances reponame="samgrah/blog-comments" issueTerm="title" />
+	<p class="mt-20 text-2xl text-gray-700 font-medium child:max-w-prose">Comments</p>
+	<hr class="mb-2" />
+	<Utterances class="mx-auto" reponame="samgrah/blog-comments" issueTerm="title" />
 </div>

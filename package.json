@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@mapbox/node-pre-gyp": "^1.0.9"
+		"@mapbox/node-pre-gyp": "^1.0.9",
+		"mdsvex-relative-images": "^1.0.2"
 	}
 }

@@ -3,14 +3,14 @@
 	<div class="max-w-prose mx-auto">
 		<div class="h-28 pt-3 text-gray-400 relative flex items-start justify-between">
 			<div class="sm:items-stretch sm:justify-start">
-				<a class="flex-shrink-0 flex items-center hover:drop-shadow-lg hover:" href="/">
+				<a class="flex-shrink-0 flex items-center drop-shadow-lg"  href="/">
 					<span class="text-3xl font-medium">Sam Graham</span>
 				</a>
 			</div>
-			<div class="pt-1 pr-2 font-semibold text-xl flex space-x-4">
-				<a class="hover:drop-shadow-lg" href="/about">About</a>
-				<a class="hover:drop-shadow-lg" href="/blog">Posts</a>
-				<a class="hover:drop-shadow-lg" href="/projects">Projects</a>
+			<div class="pt-1 pr-2 font-semibold text-xl flex space-x-4 child:drop-shadow-lg">
+				<a href="/about">About</a>
+				<a href="/blog">Posts</a>
+				<a href="/projects">Projects</a>
 			</div>
 			<!-- <button type='button' class="bg-gray-800 p-1 mr-6 rounded-full">
             <a href='https://github.com/SamGrah'>

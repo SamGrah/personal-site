@@ -32,7 +32,6 @@
 	"type": "module",
 	"dependencies": {
 		"@mapbox/node-pre-gyp": "^1.0.9",
-		"mdsvex-relative-images": "^1.0.2",
-		"rollup-plugin-copy": "^3.4.0"
+		"mdsvex-relative-images": "^1.0.2"
 	}
 }

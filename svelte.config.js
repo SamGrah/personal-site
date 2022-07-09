@@ -16,15 +16,6 @@ const config = {
 		adapter: adapter()
 	},
   extensions: ['.svelte', ...mdsvexConfig.extensions],
-  client: {
-    plugins: [
-      copy({
-        targets: [
-          { src: 'src/content/images/**/*.*', dest: 'static/images' }
-        ]
-      })
-    ]
-  }
 };
 
 export default config;

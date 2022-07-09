@@ -3,8 +3,8 @@
 	<div class="max-w-prose mx-auto">
 		<div class="h-28 pt-3 text-gray-400 relative flex items-start justify-between">
 			<div class="sm:items-stretch sm:justify-start">
-				<a class="flex-shrink-0 flex items-center drop-shadow-lg"  href="/">
-					<span class="text-3xl font-medium">Sam Graham</span>
+				<a class="text-2xl italic font-semibold flex items-center drop-shadow-lg" href="/">
+          @devStuff
 				</a>
 			</div>
 			<div class="pt-1 pr-2 font-semibold text-xl flex space-x-4 child:drop-shadow-lg">

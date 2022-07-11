@@ -1,5 +1,4 @@
 <script>
-	import { fade } from 'svelte/transition';
 	const ariaSrc = './aria.png';
 	const httpBinSrc = './httpBin.png';
 	const scalePic = 'transition-all ease-in duration-300 hover:scale-[1.01] hover:drop-shadow-2xl';
@@ -7,7 +6,7 @@
 
 <div class="flex flex-grow w-prose max-w-prose mx-auto">
 	<div class="flex flex-wrap mx-auto gap-x-16 gap-y-4 place-content-evenly">
-		<div in:fade class="w-72 pt-5 flex flex-col rounded-2xl">
+		<div class="w-72 pt-5 flex flex-col rounded-2xl">
 			<a href="https://aria-deploy.github.io/">
 				<img class="rounded-2xl {scalePic}" alt="aria demo" src={ariaSrc} />
 			</a>
@@ -17,7 +16,7 @@
 				on with this project.
 			</p>
 		</div>
-		<div in:fade class="w-72 flex flex-col items-center rounded-2xl">
+		<div class="w-72 flex flex-col items-center rounded-2xl">
 			<a href="https://github.com/SamGrah/httpBin">
 				<img class="w-[14.65rem] pt-5 {scalePic}" alt="httpBin homepage" src={httpBinSrc} />
 			</a>

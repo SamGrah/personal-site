@@ -1,3 +1,11 @@
+<script>
+  import {beforeUpdate, tick} from 'svelte';
+
+  beforeUpdate(async () => {
+    await tick();
+  });
+</script>
+
 <div class="flex flex-grow w-prose max-w-prose mx-auto">
 	<div class="flex flex-wrap mx-auto gap-x-16 gap-y-4 place-content-evenly">
 		<div class="w-72 pt-5 flex flex-col rounded-2xl">

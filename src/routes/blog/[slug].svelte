@@ -24,7 +24,7 @@
 </svelte:head>
 
 <div class="pl-1 z-1">
-	<p class="mb-0 text-5xl text-gray-700 font-medium">{title}</p>
+	<p class="mb-0 text-3xl text-gray-700 font-semibold">{title}</p>
 	<p class="mt-2 text-sm text-gray-500">
 		By {author} &#8226
 		<span class="italic">

@@ -1,3 +1,3 @@
-<div class="max-w-prose mx-auto">
+<div class="max-w-prose w-prose mx-auto">
 	<slot />
 </div>

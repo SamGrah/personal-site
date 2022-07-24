@@ -34,7 +34,7 @@
 	</p>
 	<div class="flex mb-5 space-x-1.5">
 		{#each tags as tag}
-			<a class="mt-2 mb-4 px-1 text-sm rounded-xl border border-gray-400" href="/blog?tag={tag}">
+			<a class="mt-2 mb-4 px-1 text-sm rounded-xl border border-gray-400" href="/blogs?tag={tag}">
 				{tag}
 			</a>
 		{/each}

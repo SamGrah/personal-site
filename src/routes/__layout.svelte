@@ -5,7 +5,7 @@
 
 <div class="h-full w-screen flex flex-col">
 	<Nav />
-	<div class="relative mx-8">
+	<div class="max-w-prose mx-auto">
 		<slot />
 	</div>
 </div>

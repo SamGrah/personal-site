@@ -6,7 +6,7 @@
 	];
 
 	const hoverUnderlineClasses =
-		'border-b-2 border-gray-400/0 transition-all ease-in duration-200 hover:border-gray-400/50';
+		'border-b-2 border-gray-400/0 transition-all ease-in duration-100 hover:text-gray-600';
 </script>
 
 <!-- style="background-color: #21CEAB;" -->
@@ -25,11 +25,6 @@
 					</a>
 				{/each}
 			</div>
-			<!-- <button type='button' class="bg-gray-800 p-1 mr-6 rounded-full">
-            <a href='https://github.com/SamGrah'>
-              <i class="fab fa-github fa-2x hover:opacity-80" style='color: #21CEAB;'>
-            </a>
-        </button>  -->
 		</div>
 	</div>
 </nav>

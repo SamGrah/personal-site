@@ -22,11 +22,9 @@
 	<title>{$appTitle}</title>
 </svelte:head>
 
-<div class="max-w-prose mx-auto">
-	{#if postsFilter.prop}
-		<p class="mb-10 text-gray-500 text-3xl font-medium">
-			{postsFilter.msg}
-		</p>
-	{/if}
-	<PostsByYear filter={postsFilter} />
-</div>
+{#if postsFilter.prop}
+	<p class="mb-10 text-gray-500 text-3xl font-medium">
+		{postsFilter.msg}
+	</p>
+{/if}
+<PostsByYear filter={postsFilter} />

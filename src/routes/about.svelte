@@ -1,50 +1,47 @@
-<!-- <svelte:head>
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-	<link rel="manifest" href="public/favicons/site.webmanifest" />
-	<link rel="mask-icon" href="public/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-	<link rel="shortcut icon" href="public/favicons/favicon.ico" />
-</svelte:head> -->
+<script>
+	import GithubIcon from '../components/Icons/GithubIcon.svelte';
+	import LinkedIn from '../components/Icons/LinkedInIcon.svelte';
+	import ResumeIcon from '../components/Icons/ResumeIcon.svelte';
+</script>
 
-<div class="logo-links">
-	<a href="https://github.com/SamGrah" target="_blank">
-		<img class="icon" src="./git_hub.svg" alt="github logo" id="github-logo" />
-	</a>
-	<a href="./resume.pdf" target="_blank">
-		<img
-			class="icon"
-			src="./resume.svg"
-			alt="link to Sam Graham resume"
-			id="resume-logo"
-		/>
-	</a>
-	<a href="https://www.linkedin.com/in/samgr" target="_blank">
-		<img
-			class="icon"
-			src="./linked_in.svg"
-			alt="link to Sam Graham LinkedIn"
-			id="linkedin-logo"
-		/>
-	</a>
+<div class="flex-col w-[30%] mx-auto">
+	<img
+		class="rounded-full border-2 border-gray-100 drop-shadow-md"
+		src="./pic.jpeg"
+		alt="photo of Sam Graham"
+	/>
+	<div class="mx-auto pt-7 flex justify-between">
+		<a href="https://github.com/SamGrah" target="_blank">
+			<svelte:component this={GithubIcon} />
+		</a>
+		<a href="https://www.linkedin.com/in/samgr" target="_blank">
+			<svelte:component this={LinkedIn} />
+		</a>
+		<a href="./resume.pdf" target="_blank">
+			<svelte:component this={ResumeIcon} />
+		</a>
+	</div>
 </div>
-<main>
-	<section id="intro" class="flexbox horz-center">
-		<img
-			id="avatar"
-			class="profile"
-			src="./pic.jpeg"
-			alt="photo of Sam Graham"
-		/>
-		<h1 class="profile-name">Sam Graham</h1>
-		<p class="intro-p-1">
-			I'm a full stack software engineer from Boston, MA with experience in Node.js, TypeScript,
-			Python, Go, PostgreSQL, Docker, and AWS.
+<div class="text-gray-700 w-[65%] mx-auto pl-12 pt-10 space-y-2">
+	<p>
+		My name is Sam Graham and I currently write backend software out of my command center in Boston,
+		MA.<br />
+	</p>
+	<div>
+		<p>
+			This is my personal site. My own home away from home on the internets. Off the clock,
+			you'll find me:
 		</p>
-		<p class="intro-p-2">
-			I recently built <a class="aria" href="https://aria-deploy.github.io/"
-				><strong>Aria</strong></a
-			>, an open source, self-hosted canary deployment analysis tool.
-		</p>
-	</section>
-</main>
+		<ul class="pl-7 pt-1 text-gray-600 font-light italic tracking-wide list-disc">
+			<li>
+				dancing <a
+					class="font-semibold"
+					href="https://www.youtube.com/watch?v=qTcuxuMxNQs&t=38s"
+					target="_blank">Argentine Tango</a
+				>
+			</li>
+			<li>playing video games</li>
+			<li>coding stuff like this site</li>
+		</ul>
+	</div>
+</div>

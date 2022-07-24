@@ -4,7 +4,7 @@
 	const scalePic = 'transition-all ease-in duration-300 hover:scale-[1.01] hover:drop-shadow-2xl';
 </script>
 
-<div class="flex flex-grow w-prose max-w-prose mx-auto">
+<div class="flex flex-grow w-prose">
 	<div class="flex flex-wrap mx-auto gap-x-16 gap-y-4 place-content-evenly">
 		<div class="w-72 pt-5 flex flex-col rounded-2xl">
 			<a href="https://aria-deploy.github.io/">
